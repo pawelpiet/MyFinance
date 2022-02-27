@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chartButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B19797"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="97dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#9C27B0"
+        android:backgroundTint="#CDB9B9"
+        android:fontFamily="@font/frank_ruhl_libre"
+        android:onClick="onClick"
+        android:text="@string/addButton"
+        app:iconTint="#C5B7B7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/expenses"
+        android:layout_width="390dp"
+        android:layout_height="489dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266"
+        tools:itemCount="6"
+        tools:listitem="@layout/item_expense" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chartFloatButton"
+        android:layout_width="66dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#CDB9B9"
+        android:clickable="true"
+
+        android:tint="#552525"
+        app:backgroundTint="#CDB9B9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#C8B9B9"
+        app:srcCompat="?attr/actionModeShareDrawable" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="260dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/frank_ruhl_libre"
+        android:text="@string/myfinance"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/saldoIncome"
+        android:layout_width="96dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/frank_ruhl_libre"
+        android:text="Total Income:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expenses" />
+
+    <TextView
+        android:id="@+id/spendTotal"
+        android:layout_width="90dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/frank_ruhl_libre"
+        android:text="Total spend:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saldoIncome" />
+
+    <TextView
+        android:id="@+id/sumTotal"
+        android:layout_width="49dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/frank_ruhl_libre"
+        android:text="Total:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expenses" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="63dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="113dp"
+        android:text="0"
+        android:textColor="#6ACC6D"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/saldoIncome"
+        app:layout_constraintStart_toStartOf="@+id/saldoIncome" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="63dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="23dp"
+        android:text="0"
+        android:textColor="#C63D3D"
+        android:textSize="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/spendTotal"
+        app:layout_constraintStart_toEndOf="@+id/spendTotal" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="81dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="32dp"
+        android:text="0"
+        android:textColor="#F6F1F1"
+        android:textSize="20dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sumTotal"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

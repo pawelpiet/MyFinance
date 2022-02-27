@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyFinance</string>
+    <string name="myfinance">MyFinance</string>
+    <string name="go">GO</string>
+    <string name="addButton">Add</string>
+
+    <string-array name="categories">
+        <item>Choose from list</item>
+        <item>Income</item>
+        <item>Food</item>
+        <item>Clothes</item>
+        <item>Cosmetics</item>
+        <item>Fees</item>
+        <item>Education</item>
+        <item>Transport</item>
+        <item>House</item>
+        <item>Recreation</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

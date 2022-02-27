@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/placeName"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/frank_ruhl_libre"
+            android:text="TextView"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="187dp"
+            android:layout_height="67dp"
+            android:layout_below="@id/placeName"
+            android:layout_alignEnd="@+id/spCategoeires"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-14dp"
+            android:layout_marginEnd="-272dp"
+            android:fontFamily="@font/frank_ruhl_libre"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cost"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-42dp"
+            android:fontFamily="@font/frank_ruhl_libre"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/spCategoeires"
+            android:layout_width="109dp"
+            android:layout_height="17dp"
+            android:layout_below="@id/data"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/frank_ruhl_libre"
+            android:text="TextView" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

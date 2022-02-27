@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B19797"
+    tools:context=".ChartActivity">
+
+
+    <com.pjatk.myfinance.Chart
+        android:id="@+id/graph_view"
+        android:layout_width="288dp"
+        android:layout_height="379dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.287" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="160dp"
+        android:fontFamily="@font/frank_ruhl_libre"
+        android:text="Total"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="159dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="112dp"
+        android:fontFamily="@font/frank_ruhl_libre"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="106dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#CDB9B9"
+        android:fontFamily="@font/frank_ruhl_libre"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
